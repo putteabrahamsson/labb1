@@ -15,6 +15,10 @@
 		00139A5223C87CFB0091E5AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00139A5123C87CFB0091E5AC /* Assets.xcassets */; };
 		00139A5523C87CFB0091E5AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00139A5323C87CFB0091E5AC /* LaunchScreen.storyboard */; };
 		00139A5823C87CFB0091E5AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00139A5723C87CFB0091E5AC /* main.m */; };
+		005A542823CB7903004AD83B /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 005A542723CB7903004AD83B /* AboutMeViewController.m */; };
+		005A542B23CB790F004AD83B /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 005A542A23CB790F004AD83B /* ImageViewController.m */; };
+		005A542E23CB791C004AD83B /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 005A542D23CB791C004AD83B /* GameViewController.m */; };
+		005A543123CB7926004AD83B /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 005A543023CB7926004AD83B /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,14 @@
 		00139A5423C87CFB0091E5AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00139A5623C87CFB0091E5AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00139A5723C87CFB0091E5AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		005A542623CB7903004AD83B /* AboutMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutMeViewController.h; sourceTree = "<group>"; };
+		005A542723CB7903004AD83B /* AboutMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutMeViewController.m; sourceTree = "<group>"; };
+		005A542923CB790F004AD83B /* ImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		005A542A23CB790F004AD83B /* ImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		005A542C23CB791C004AD83B /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		005A542D23CB791C004AD83B /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		005A542F23CB7926004AD83B /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		005A543023CB7926004AD83B /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,16 +79,32 @@
 				00139A4323C87CF80091E5AC /* AppDelegate.m */,
 				00139A4523C87CF80091E5AC /* SceneDelegate.h */,
 				00139A4623C87CF80091E5AC /* SceneDelegate.m */,
-				00139A4823C87CF80091E5AC /* ViewController.h */,
-				00139A4923C87CF80091E5AC /* ViewController.m */,
-				00139A4B23C87CF80091E5AC /* Main.storyboard */,
 				00139A5123C87CFB0091E5AC /* Assets.xcassets */,
+				00139A4B23C87CF80091E5AC /* Main.storyboard */,
 				00139A5323C87CFB0091E5AC /* LaunchScreen.storyboard */,
 				00139A5623C87CFB0091E5AC /* Info.plist */,
 				00139A5723C87CFB0091E5AC /* main.m */,
 				00139A4E23C87CF80091E5AC /* labb1.xcdatamodeld */,
+				005A542523CB78D1004AD83B /* ViewControllers */,
 			);
 			path = labb1;
+			sourceTree = "<group>";
+		};
+		005A542523CB78D1004AD83B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				00139A4823C87CF80091E5AC /* ViewController.h */,
+				00139A4923C87CF80091E5AC /* ViewController.m */,
+				005A542623CB7903004AD83B /* AboutMeViewController.h */,
+				005A542723CB7903004AD83B /* AboutMeViewController.m */,
+				005A542923CB790F004AD83B /* ImageViewController.h */,
+				005A542A23CB790F004AD83B /* ImageViewController.m */,
+				005A542C23CB791C004AD83B /* GameViewController.h */,
+				005A542D23CB791C004AD83B /* GameViewController.m */,
+				005A542F23CB7926004AD83B /* SettingsViewController.h */,
+				005A543023CB7926004AD83B /* SettingsViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,10 +177,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				005A542E23CB791C004AD83B /* GameViewController.m in Sources */,
 				00139A5823C87CFB0091E5AC /* main.m in Sources */,
 				00139A5023C87CF80091E5AC /* labb1.xcdatamodeld in Sources */,
+				005A543123CB7926004AD83B /* SettingsViewController.m in Sources */,
 				00139A4A23C87CF80091E5AC /* ViewController.m in Sources */,
 				00139A4423C87CF80091E5AC /* AppDelegate.m in Sources */,
+				005A542823CB7903004AD83B /* AboutMeViewController.m in Sources */,
+				005A542B23CB790F004AD83B /* ImageViewController.m in Sources */,
 				00139A4723C87CF80091E5AC /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,7 +334,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = se.abrahamsson.labb1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,7 +351,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = se.abrahamsson.labb1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
